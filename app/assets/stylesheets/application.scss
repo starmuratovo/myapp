@@ -10,7 +10,95 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ *= require font-awesome
  *= require_tree .
  *= require_self
  */
 @import "bootstrap";
+$sky:   #168DE2;
+$dsky:  #1378C0;
+$wh:    #FFFFFF;
+$smoke: #EDEEF0;
+$gray:  #3F414E;
+
+body{
+  background: url('tiq.png');
+ width: 100%;
+ height: 100%;
+}
+/*classes*/
+#main-menu{
+  position: absolute;
+  bottom: 40px;
+  background-color: $sky;
+  width: 60%;
+  height:25vh;
+  left: 20%;
+  box-shadow: 0 0 15px;
+  border-top: 3px solid $dsky;
+  border-right:   3px solid $dsky;
+  border-left: 3px solid $dsky;
+  padding: 20px;
+  z-index: 1;
+}
+.nav-top{
+  position:  absolute;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(to top, #E5E4E0, $smoke);
+  border-bottom: 1px solid #575F6A;
+}
+.nav-bottom-left{
+  position:  absolute;
+  bottom: 0;
+  width: 20%;
+  height: 40px;
+  border-top: 1px solid #575F6A;
+  background: linear-gradient(to top, #E5E4E0, $smoke);
+}
+.nav-bottom-right{
+  position:  absolute;
+  bottom: 0;
+  right: 0;
+  width: 20%;
+  height: 40px;
+  border-top: 1px solid #575F6A;
+  background: linear-gradient(to top, #E5E4E0, $smoke);
+}
+#button{
+  position:  absolute;
+  bottom: 0;
+  width: 60%;
+  background-color: $sky;
+  height: 40px;
+  margin-left:  20%;
+  border-right: 3px solid $dsky;
+  border-left: 3px solid $dsky;
+  color: white;
+  text-align: center;
+  z-index: 1;
+  &:hover{
+    background-color: $dsky;
+  }
+}
+.i{
+}
+.icon-box{
+  text-align: center;
+  margin: 4px;
+  margin-top: 10px;
+  padding: 5px;
+  width: 15%;
+  height: 100%;
+  display: inline-block;
+  color: $dsky;
+  &:hover{
+    color:white;
+  }
+  p{
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
