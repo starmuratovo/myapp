@@ -15,14 +15,15 @@
  *= require_self
  */
 @import "bootstrap";
-$sky:   #168DE2;
+$sky:  #04BDFE;
 $dsky:  #1378C0;
 $wh:    #FFFFFF;
-$smoke: #EDEEF0;
+$smoke: #F2F1F0;
 $gray:  #3F414E;
+$lgray: #7C7E8D;
 
 body{
-  background: url('tiq.png');
+ background: $smoke;
  width: 100%;
  height: 100%;
 }
@@ -32,9 +33,9 @@ body{
   bottom: 40px;
   background-color: $gray;
   width: 60%;
-  height:18vh;
+  height:26vh;
   left: 20%;
-  box-shadow: 0 0 15px;
+  box-shadow: 2px 2px 5px $lgray;
   padding: 20px;
   z-index: 1;
 }
@@ -42,9 +43,8 @@ body{
   position:  absolute;
   top: 0;
   width: 100%;
-  height: 40px;
-  background: linear-gradient(to top, #E5E4E0, $smoke);
-  border-bottom: 1px solid #575F6A;
+  height: 45px;
+  background: $gray;
 }
 .nav-bottom-left{
   position:  absolute;
@@ -74,7 +74,7 @@ body{
   text-align: center;
   z-index: 1;
   &:hover{
-    background-color: #7C7E8D;
+    background-color: $sky;
   }
 }
 .i{
@@ -89,11 +89,30 @@ body{
   display: inline-block;
   color: #7C7E8D;
   &:hover{
-    color: #FFE368;
+    color: $sky;
   }
   p{
     margin-top: 15px;
     font-size: 14px;
     font-weight: bold;
   }
+}
+
+#left-sidebar{
+  position: absolute;
+  left:0;
+  top: 60px;
+  bottom: 15px;
+  width: 19%;
+  background-color: white;
+  box-shadow: 2px 2px 5px $lgray;
+}
+#chart{
+  position: absolute;
+  right: 0;
+  height: 30%;
+  bottom: 15px;
+  width: 19%;
+  background-color: white;
+  box-shadow: 2px 2px 5px $lgray;
 }
